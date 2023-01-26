@@ -3,7 +3,12 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 export default function Page(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-  return <>{props.n}</>;
+  return (
+    <>
+      index
+      {props.n}
+    </>
+  );
 }
 
 export const getStaticProps: GetStaticProps<{ n: number }> = async (
