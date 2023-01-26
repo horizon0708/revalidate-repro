@@ -37,7 +37,8 @@ export default function middleware(req: NextRequest) {
   }
 
   // rewrite everything else to `/_sites/[site] dynamic route
-  url.pathname = `/_site/${currentHost}${url.pathname}`;
+  console.log(currentHost, url.pathname);
+  url.pathname = `/site/${currentHost}${url.pathname}`;
   console.log(url.pathname);
   return NextResponse.rewrite(url);
 }
