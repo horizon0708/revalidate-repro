@@ -22,10 +22,3 @@ export const getStaticProps: GetStaticProps<{ n: number }> = async (
     revalidate: false,
   };
 };
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: "blocking",
-  };
-};
