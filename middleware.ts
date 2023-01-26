@@ -16,7 +16,7 @@ export const config = {
 
 export default function middleware(req: NextRequest) {
   const url = req.nextUrl;
-
+  console.log(url);
   // Get hostname of request (e.g. demo.sidenotes.xyz, demo.localhost:3000)
   const hostname = req.headers.get("host") || "demo.sidenotes.xyz";
 

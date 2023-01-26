@@ -5,7 +5,7 @@ export default function Page(
 ) {
   return (
     <>
-      home
+      <div>home</div>
       {props.n}
     </>
   );
